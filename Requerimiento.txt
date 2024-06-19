@@ -1,0 +1,62 @@
+Realizar un programa en java que permita tener un menú donde se pueda ingresar los datos de un Médico, un
+Enfermero o un Personal de aseo (según se desee), que, además, pueda mostrar la información ingresada y
+hacer los cálculos para los métodos establecidos para dicha herencia.
+
+Para ello es necesario definir la clase Padre denominada Personal Medico con atributos como:
+• Nombre
+• Edad
+• Especialidad
+• Años de experiencia
+• Sueldo de base
+• Días de vacaciones de base
+• Valor de pensión base
+Y con métodos como:
+• Cálculo de sueldo total
+• Cálculo de días de vacaciones
+• Cálculo del valor de pensión
+
+Se tienen dos clases hijas, una de ellas, una clase Medico con atributos propios como nombre del hospital y
+horas de turno, y con valores para el sueldo base de $3’000.000, 15 días de vacaciones de base, y $2’000.000 de
+valor de pensión base.
+Con estos datos, la idea es realizar los métodos de la clase base, con estas restricciones adicionales:
+• Para calcular el sueldo total, cada médico se gana un bono adicional a su sueldo base, obteniéndolo a
+partir de la multiplicación de sus años de experiencia por 1000 (Sueldo total = sueldo base + bono).
+• Cada médico, además, puede tener un bono de días de vacaciones adicionales, que se agrega al cálculo
+de las vacaciones totales. Este bono se obtiene, dividiendo los años de experiencia entre 3 (Días de
+vacaciones totales = días de vacaciones de base + bono de vacaciones).
+• Cada médico, puede tener un bono de pensión si su edad es mayor a 60 años, ese bono de pensión se
+obtiene multiplicando los años de experiencia por 100 (Valor de pensión total = valor de pensión base +
+bono de pensión). Si la de edad del medico es inferior a 60, el valor de la pensión es simplemente el
+valor de la pensión base.
+Los medico tendrán además un método propio llamado hacer operación que muestra un mensaje de la
+realización de una operación.
+
+Existe otra clase denominada Enfermero, con atributos propios denominados Número de tarjeta profesional, y
+área de servicio. Los enfermeros tienen valores para: el sueldo base de $1’500.000, 10 días de vacaciones de
+base, y $1’000.000 de valor de pensión base.
+Con estos datos, la idea es realizar los métodos de la clase base, con estas restricciones adicionales:
+• Para calcular el sueldo total, cada enfermero se gana un bono adicional a su sueldo base, obteniéndolo a
+partir de la multiplicación de sus años de experiencia por 500 (Sueldo total = sueldo base + bono).
+• Cada enfermero, además, puede tener un bono de días de vacaciones adicionales, que se agrega al
+cálculo de las vacaciones totales. Este bono se obtiene, dividiendo los años de experiencia entre 2 (Días
+de vacaciones totales = días de vacaciones de base + bono de vacaciones).
+• Cada enfermero, puede tener un bono de pensión si su edad es mayor a 62 años, ese bono de pensión
+se obtiene multiplicando los años de experiencia por 50 (Valor de pensión total = valor de pensión base
++ bono de pensión). Si la de edad del enfermero es inferior a 62, el valor de la pensión es simplemente el
+valor de la pensión base.
+Los enfermeros tendrán además un método propio llamado aplicar medicamentos que muestra un mensaje de
+la realización de este procedimiento.
+
+Existe otra clase denominada Personal de Aseo, con un atributo propio denominado Zona asignada. El personal
+de aseo tiene valores para: el sueldo base de $800.000, 8 días de vacaciones de base, y $500.000 de valor de
+pensión base.
+Con estos datos, la idea es realizar los métodos de la clase base, con estas restricciones adicionales:
+• Para calcular el sueldo total, cada persona del aseo se gana un bono adicional a su sueldo base,
+obteniéndolo a partir de la multiplicación de sus años de experiencia por 200 (Sueldo total = sueldo base
++ bono).
+• Cada persona encargada del aseo puede tener un bono de pensión si su edad es mayor a 65 años, ese
+bono de pensión se obtiene multiplicando los años de experiencia por 25 (Valor de pensión total = valor
+de pensión base + bono de pensión). Si la de edad del enfermero es inferior a 65, el valor de la pensión
+es simplemente el valor de la pensión base.
+Restricción:
+• Los valores base deben asignarse desde el constructor por defecto de cada una de las clases creadas.
